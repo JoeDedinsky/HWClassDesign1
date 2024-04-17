@@ -5,14 +5,12 @@
  *
  * @author Rob Nash
  */
-public class ShapeDriver {
+public class    ShapeDriver {
     /**
      * precondition:  assumes {Square, Circle, Picture} all exist in the same working directory
      * postcondition: 2 squares, 2 circles, and 1 picture are constructed and manipulated, then reclaimed once main exits
      */
     public static void main(String[] args) {
-        // Uncomment for Square tests
-		/*
 		Square firstSquare = new Square();
 		Square secondSquare = new Square(10, 20);
 
@@ -21,13 +19,13 @@ public class ShapeDriver {
 		System.out.println("Drawing the first square : " + firstSquare.toString());
 		firstSquare.draw();
 
-		secondSquare.setSideLength(30);
+		secondSquare.setSide(30);
 		System.out.println("Drawing the next square with area : " + secondSquare.getArea());
 		secondSquare.draw();
-		*/
+
 
         // Uncomment for Circle tests
-		/*
+
 		Circle firstCircle = new Circle();
 		Circle secondCircle = new Circle(5, 5);
 
@@ -42,10 +40,7 @@ public class ShapeDriver {
 		secondCircle.setRadius(6);
 		System.out.println("Drawing the second circle with area " + secondCircle.getArea());
 		secondCircle.draw();
-		*/
 
-        // Uncomment for ObjectList tests
-		/*
 		// Now, lets see the bigger picture
 		ObjectList picture = new ObjectList();
 
@@ -56,6 +51,6 @@ public class ShapeDriver {
 
 		System.out.println("Drawing a Picture using ObjectList with Circles and Squares:\n");
 		System.out.println(picture.toString());
-		*/
+
     }
 }

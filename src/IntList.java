@@ -1,26 +1,12 @@
-/**
- * For Class Design - convert to IntList
- */
 public class IntList {
     private int numElements = 0;
 
     // caps at 100 elements with no bullet-proofing or bounds checks, etc.
     private int[] data = new int[100];
 
-    /**
-     * Adds item to this list without checking for array bounds.
-     *
-     * @param item value to add to the list
-     */
     public void add(int item) {
         data[numElements++] = item;
     }
-
-    /**
-     * Returns a string representation of this list.
-     *
-     * @return a string representation of this list
-     */
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
@@ -62,8 +48,7 @@ public class IntList {
         System.out.println(list.toString());
         System.out.println(list.sum());
         System.out.println(list.indexOf(95));
-        // Uncomment these to work on next
         System.out.println(list.indexOf(20));
-//  System.out.println(list.save());
+        //  System.out.println(list.save());
     }
 }
